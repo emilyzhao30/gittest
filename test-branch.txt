@@ -1,3 +1,10 @@
 新建一个分支，并把master分支代码clone到该分支，在该分支上做修改后并提交到远程该分支的git命令如下：
 // 新建一个分支，并切换到该分支
-$ git checkout -b [branch]
+$ git checkout -b branch1
+//将本地分支branch1推送到远端分支origin上
+git push origin branch1
+//在本地分支做文件编辑后add、commit
+//关联本地分支与远程分支：
+git push --set-upstream origin branch1（关联后本地分支的代码才能push到远程分支上）
+
+
